@@ -2,8 +2,9 @@
 
 ## Install cirdox
 ### méthode 1
+```
 git clone git@gricad-gitlab.univ-grenoble-alpes.fr:portetf/cirdox.git
-
+```
 (remote: The project you were looking for could not be found or you don't have permission to view it.)
 (if no access, use `cirdox.zip` for your installation)
 
@@ -19,7 +20,9 @@ mkdir -p files/output/hyp files/output/log files/output/wav files/output/xml asr
  2919  python3 cirdox2trs.py 17-01-2020_10:07:02.414:evt_1_channel_0 ../files/output/xml/
 
 ### méthode 2
+```
 git clone git@gricad-gitlab.univ-grenoble-alpes.fr:portetf/cirdox.git
+```
 ls 
 cd cirdox/
 mkdir -p files/output/hyp files/output/log files/output/wav files/output/xml asr/tmp
@@ -41,10 +44,10 @@ sox GROUP_34_CLIENT_2_EMO_S_MOOD_NEG_04_05_14.wav -c 1 -b 16 -r 16k -e signed-in
 play GROUP.wav 
 rm audio.wav 
 
-# renommer ton ficher 
+### renommer ton ficher 
 mv GROUP.wav audio.wav
 
-# Vérifier le contenue des fichiers (optional)
+### Vérifier le contenue des fichiers (optional)
 play audio.wav 
 
 ### Préparer cirdox (effacer le contenue des anciennes transcription)
